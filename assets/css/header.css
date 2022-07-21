@@ -1,0 +1,36 @@
+header {
+  padding: 0 128px 32px;
+  min-height: 100vh;
+  min-height: 110vh;
+  display: table;
+}
+
+header h1 span {
+  color: var(--secondary);
+}
+header .text-holder {
+  padding: 140px 0 0;
+}
+header .text-holder .section-cta {
+  gap: 16px;
+  margin-top: 24px;
+}
+.header-right {
+  /* background-color: var(--tertiary); */
+  /* background: url('/assets/images/sample.jpg'); */
+  height: 100%;
+  padding-top: 120px;
+  overflow: hidden;
+}
+.header-right img {
+  width: 70%;
+  object-fit: contain;
+  top: -24px;
+}
+
+#two {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  top: unset;
+}

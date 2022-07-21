@@ -1,0 +1,27 @@
+nav {
+    width: 90%;
+    padding: 16px 64px 16px 48px;
+    border-radius: 104px;
+    box-shadow: 4px 1px 10px 7px #1d1d1d0c;
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    background-color: #fefefea4;
+    z-index: 10000;
+    backdrop-filter: blur(24px);
+}
+
+nav img{
+    width: 160px;
+    height: auto;
+}
+
+.links{
+    gap: 32px;
+}
+
+.links a {
+    font-size: 14px;
+    color: var(--ink);
+    font-weight: 500;
+}
