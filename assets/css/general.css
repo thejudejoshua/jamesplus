@@ -10,8 +10,21 @@
 .col-50 {
   width: 50%;
 }
+
 .col-60 {
   width: 60%;
+}
+
+.col-70 {
+  width: 70%;
+}
+
+.col-80 {
+  width: 80%;
+}
+
+.col-90 {
+  width: 90%;
 }
 
 .col-100 {
@@ -77,12 +90,12 @@
 }
 
 .btn{
-    font-size: 16px;
-    padding: 16px 24px;
+    font-size: 14px;
+    padding: 14px 20px;
     background-color: var(--secondary);
     color: var(--neutral);
     border-radius: 104px;
-    min-width: 200px;
+    min-width: 180px;
     text-align: center;
     /* height: auto; */
     display: flex;
@@ -95,7 +108,7 @@
 }
 
 .btn i{
-    font-size: 24px;
+    font-size: 20px;
     display: inline-block;
 }
 
@@ -109,5 +122,5 @@
     background-color: transparent;
     border: none;
     color: var(--secondary);
-    font-size: 20px;
+    font-size: 16px;
 }

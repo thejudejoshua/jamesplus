@@ -3,6 +3,7 @@
 @import url("text.css");
 @import url("general.css");
 @import url("body.css");
+@import url("footer.css");
 :root {
   --neutral: #fefefe;
   --primary: #f15a25;

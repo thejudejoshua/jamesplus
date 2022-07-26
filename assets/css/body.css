@@ -1,65 +1,37 @@
 section article{
-    padding: 104px 128px;
+    padding: 104px 128px 96px;
 }
 
-#clients {
-    background-color: var(--secondary);
-    /* border: 1px solid var(--accent); */
-    padding: 96px 128px;
-    gap: 24px;
+.why-top {
+    gap: 64px;
 }
 
-#clients span {
-    color: var(--accent);
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    opacity: 0.3;
-}
 #why{
-    padding-left: 0;
-    padding-right: 0;
+    padding: 104px 128px 104px;
+    border-top: 1px solid var(--accent);
 }
 
 #why .img{
-    width: 100%;
-    height: 248px;
-    /* border-radius: 32px; */
+    height: 304px;
+    border-radius: 24px;
     overflow: hidden;
-    background: linear-gradient(#000000a1, #000000af), url(/assets/images/startttt.jpg);
-    background-attachment: fixed;
+    background: url(/assets/images/unused/shutterstock_1887390205.jpg);
     background-size: cover;
-    background-position: center;
-    /* padding-bottom: 32px; */
+    background-position: top;
 }
-/* 
-#why .img::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--tertiary);
-    opacity: 0.3;
-    z-index: 1;
-    display: none;
-}
-
-#why img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    display: none;
-} 
-
-#why .img i{
-    font-size: 24px;
-    color: var(--neutral);
-}*/
 
 .caveat {
     text-align: center;
-    margin: 0 auto 72px;
+    margin: 0 auto 80px;
+}
+
+#testimonials .caveat {
+    margin-bottom: 48px;
+}
+
+#why .caveat {
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .caveat h2{
@@ -67,14 +39,13 @@ section article{
 }
 
 #services{
-    margin-top: 72px;
+    padding-top: 104px;
     gap: 64px 32px;
-    padding-left: 128px;
-    padding-right: 128px;
 }
 
 .service{
     width: 300px;
+    max-height: 112px;
     text-align: center;
 }
 
@@ -95,14 +66,19 @@ section article{
 }
 
 #services ~ .section-cta{
-    margin-top: 104px;
+    margin-top: 64px;
+}
+
+#clientelle .section-cta{
+    margin-top: 96px;
 }
 
 #testimonials{
-    background-color: var(--secondary);
-    color: var(--neutral);
+    color: var(--secondary);
+    background-color: var(--neutral);
     padding-left: 0;
     padding-right: 0;
+    border-top: 1px solid var(--accent);
 }
 
 #testimonials h2{
@@ -116,7 +92,7 @@ section article{
 
 .slider-on-scroll{
     overflow-x: auto;
-    padding: 0 128px;
+    padding: 24px 128px;
 }
 
 .slider-on-scroll::-webkit-scrollbar{
@@ -126,11 +102,11 @@ section article{
 .testimony{
     width: 512px;
     padding: 40px 32px;
-    /* border: 1px solid; */
     border-radius: 24px;
     background-color: var(--neutral);
     color: var(--ink);
-    height: auto;
+    height: 280px;
+    box-shadow: 4px 1px 20px 6px #1d1d1d0c;
 }
 
 .testimonier{
@@ -174,15 +150,105 @@ section article{
     padding-bottom: 72px;
 }
 
-/* .cta-group .btn{
-    color: var(--neutral)
-} */
+#break-down{
+    padding: 104px 128px;
+    border-top: 1px solid var(--accent);
+}
+
+
+#pricing{
+    border-radius: 24px;
+    overflow: hidden;
+}
 
 #pricing .type {
-    width: 30%;
+    width: 25%;
     padding: 48px 24px;
-    border-radius: 24px;
-    box-shadow: 4px 1px 10px 7px #1d1d1d0c;
     text-align: center;
+    justify-content: space-between;
+    height: 560px;
+    border-right: 1px solid var(--accent);
+}
+
+#pricing .type.pricing-img {
+    background: url(/assets/images/startttt.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-position-y: center;
+    background-position-x: -520px;
+    border-right: none;
+    padding: 0;
+    border-radius: 24px;
+}
+#pricing .type.pricing-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -360px center;
+    border-radius: 24px;
+    display: none;
+}
+#pricing .type:last-child {
+    border-right: 0;
+}
+
+#pricing .header {
+    height: 32px;
+    display: inline-block;
+}
+
+#pricing .type .pricing-body{
+    border-radius: 32px;
+    background-color: var(--neutral);
     gap: 24px;
+    height: 401px;
+    width: 100%;
+}
+
+#pricing .type .header h4 {
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+
+#pricing .type #ngn {
+    font-size: 32px;
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+#pricing .type span {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+#pricing .type ul li {
+    padding-top: 12px;
+}
+
+#clients span {
+    color: var(--ink);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.3;
+}
+
+.find_live_chat {
+    position: fixed;
+    right: 56px;
+    top: unset;
+    left: unset;
+    bottom: 56px;
+    padding: 16px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    box-shadow: 2px 0px 20px 6px #1d1d1d2e;
+    z-index: 12;
+}
+
+.find_live_chat i {
+    font-size: 32px;
+    color: var(--neutral);
 }

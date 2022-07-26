@@ -17,11 +17,11 @@ nav img{
 }
 
 .links{
-    gap: 32px;
+    gap: 56px;
 }
 
 .links a {
     font-size: 14px;
     color: var(--ink);
-    font-weight: 500;
+    font-weight: 600;
 }
