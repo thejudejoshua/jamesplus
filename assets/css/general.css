@@ -105,6 +105,8 @@
     font-weight: 600;
     font-family: 'Albert sans', sans-serif;
     line-height: 1.2;
+    border: 1px solid var(--secondary);
+    cursor: pointer;
 }
 
 .btn i{

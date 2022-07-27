@@ -1,18 +1,19 @@
 nav {
     width: 90%;
-    padding: 16px 64px 16px 48px;
+    padding: 24px 64px 24px 48px;
     border-radius: 104px;
     box-shadow: 4px 1px 10px 7px #1d1d1d0c;
     position: fixed;
     left: 5%;
     top: 5%;
-    background-color: #fefefea4;
+    background-color: #fefefeb2;
     z-index: 10000;
     backdrop-filter: blur(24px);
+    transition: 0.6s;
 }
 
 nav img{
-    width: 160px;
+    width: 128px;
     height: auto;
 }
 
@@ -24,4 +25,30 @@ nav img{
     font-size: 14px;
     color: var(--ink);
     font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.links a::after {
+    width: 0.1%;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    background-color: var(--secondary);
+    transition: 0.6s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.links a:hover::after {
+    width: 50%;
+}
+
+.fixed {
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    padding: 24px 128px;
 }
