@@ -79,6 +79,7 @@ section article {
     padding-left: 0;
     padding-right: 0;
     /* border-top: 1px solid var(--accent); */
+    padding: 120px 0;
 }
 
 #testimonials h2 {
@@ -92,7 +93,7 @@ section article {
 
 .slider-on-scroll {
     overflow-x: auto;
-    padding: 24px 128px;
+    padding: 32px 128px;
 }
 
 .slider-on-scroll::-webkit-scrollbar {
@@ -218,6 +219,10 @@ section article {
     padding-top: 12px;
 }
 
+#clientelle {
+    overflow: hidden;
+}
+
 #clients-row {
     gap: 104px;
     width: max-content;
@@ -225,7 +230,7 @@ section article {
 
 #clients {
     gap: 104px;
-    transform: translateX(0%);
+    transform: translateX(0px);
     animation: scroll-text 25s linear infinite;
 }
 
@@ -237,10 +242,10 @@ section article {
 
 @keyframes scroll-text {
     from {
-        transform: translateX(0%);
+        transform: translateX(0px);
     }
     to {
-        transform: translateX(-30%);
+        transform: translateX(-400px);
     }
 }
 
